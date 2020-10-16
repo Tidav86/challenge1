@@ -103,13 +103,10 @@ h2.top-title {
   margin-bottom: 10px;
 }
 
-#text1-top-item,
-#text2-top-item {
+#text-top-item {
   font-weight: 400;
-  color: hsl(218, 22%, 67%);
-}
-#text1-top-item {
   padding-top: 20px;
+  color: hsl(218, 22%, 67%);
 }
 
 h2 {
@@ -126,7 +123,7 @@ p.cycle-price {
 }
 p.text-info {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   color: hsla(203, 44%, 93%, 0.7);
 }
 p.text-services {
