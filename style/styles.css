@@ -1,0 +1,128 @@
+/* POLICE PAR DEFAULT MONTSERRAT */
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  font-family: "Karla", cursive;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(232, 232, 232);
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVE PARAMETRES */
+@media screen and (max-width: 981px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (3, 300px);
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+}
+
+.wrapper {
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgb(141, 141, 141);
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 220px 260px;
+  grid-template-areas:
+    "a a"
+    "b c";
+  margin-top: 150px;
+}
+
+/* CELLS */
+.top-item {
+  grid-area: a;
+  border-radius: 10px 10px 0 0;
+  padding: 40px 35px;
+  background-color: white;
+}
+.services {
+  grid-area: b;
+  border-radius: 0 0 0 10px;
+  padding: 20px 40px;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 62%, 43%);
+}
+.btn-subscribe {
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  border-style: none;
+  color: hsl(204, 43%, 93%);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+}
+.btn-subscribe:hover {
+  background-color: white;
+  color: hsl(71, 73%, 54%);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price-per-month {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 10px;
+}
+
+.info {
+  grid-area: c;
+  border-radius: 0 0 10px 0;
+  padding: 20px 30px;
+  background: hsl(179, 34%, 57%);
+  color: hsl(204, 43%, 93%);
+}
+
+/* FONTS PARAMETRES */
+h1.big-title {
+  font-size: 24px;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+
+h2.top-title {
+  font-size: 18px;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+
+#text1-top-item,
+#text2-top-item {
+  font-weight: 400;
+  color: hsl(218, 22%, 67%);
+}
+
+h2 {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+}
+.price {
+  display: flex;
+  font-size: 30px;
+}
+p.cycle-price {
+  padding-left: 15px;
+  color: hsla(203, 44%, 93%, 0.7);
+}
+p.text-info {
+  font-size: 14px;
+  color: hsla(203, 44%, 93%, 0.7);
+}
+p.text-services {
+  padding-bottom: 20px;
+}
