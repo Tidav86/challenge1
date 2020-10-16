@@ -4,7 +4,6 @@
 * {
   font-family: "Karla", cursive;
   margin: 0;
-  padding: 0;
 }
 body {
   background-color: rgb(232, 232, 232);
@@ -15,10 +14,10 @@ body {
 }
 
 /* RESPONSIVE PARAMETRES */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 737px) {
   .wrapper {
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
     grid-template-areas:
       "a"
       "b"
@@ -41,7 +40,7 @@ body {
   grid-template-areas:
     "a a"
     "b c";
-  margin-top: 150px;
+  margin: 150px 50px 0 50px;
 }
 
 /* CELLS */
@@ -110,7 +109,7 @@ h2.top-title {
   color: hsl(218, 22%, 67%);
 }
 #text1-top-item {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 h2 {
